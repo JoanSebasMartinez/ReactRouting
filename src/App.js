@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AgregarBrigadista from './componentes/AgregarBrigadista';
+import ListaBrigadistas from './componentes/ListaBrigadistas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/brigadista/new' element={<AgregarBrigadista/>}></Route>
+        <Route path='/brigadista' element={<ListaBrigadistas/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
