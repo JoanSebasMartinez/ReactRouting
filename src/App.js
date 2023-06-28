@@ -8,8 +8,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/brigadista/new' element={<AgregarBrigadista/>}></Route>
-        <Route path='/brigadista' element={<ListaBrigadistas/>}></Route>
+        <Route path='/new' element={<AgregarBrigadista/>}></Route>
+        <Route path='/' element={<ListaBrigadistas/>}></Route>
       </Routes>
     </BrowserRouter>
   );

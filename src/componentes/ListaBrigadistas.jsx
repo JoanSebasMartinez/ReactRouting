@@ -10,7 +10,7 @@ return(
         <li>Brigadista 1</li>
         <li>Brigadista 2</li>
     </ul>
-    <a href="/brigadista/new"><button>Agregar Brigadista</button></a>
+    <a href="/new"><button>Agregar Brigadista</button></a>
     </div>
 );
 }
